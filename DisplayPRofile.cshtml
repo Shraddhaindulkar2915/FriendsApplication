@@ -1,0 +1,15 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Part 3 - Facebook Friends Listing";
+  
+}
+ 
+<h2>Friends Listing</h2>
+ 
+<table>
+    @foreach(var friend in Model.friendsListing){
+        <tr><td>@friend.id</td><td>@friend.name</td></tr>
+    }
+</table>
